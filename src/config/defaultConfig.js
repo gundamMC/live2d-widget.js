@@ -35,7 +35,7 @@ const defaultConfig = {
   react: {
     opacityDefault: 0.7,
     opacityOnHover: 0.2,
-    myFunc: (e) => {console.log('(undefined) ┑(￣Д ￣)┍');},
+    myFunc: (x, y) => {console.log('(undefined) ┑(￣Д ￣)┍');},
   },
   dev: {
     log: false,

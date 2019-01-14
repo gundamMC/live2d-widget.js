@@ -327,7 +327,28 @@ function modelTapEvent(event)
     lastMouseX = sx;
     lastMouseY = sy;
 
-    live2DMgr.tapEvent(vx, vy);
+    config.react.myFunc(vx, vy);
+    // live2DMgr.tapEvent(vx, vy);
+}
+
+function setExpression(name)
+{
+    live2DMgr.setExpression(name);
+}
+
+function getExpressions()
+{
+    return live2DMgr.getExpressions();
+}
+
+function startMotion(group, no)
+{
+    live2DMgr.startMotion(group, no);
+}
+
+function getMotions()
+{
+    return live2DMgr.getMotions();
 }
 
 function followPointer(event)

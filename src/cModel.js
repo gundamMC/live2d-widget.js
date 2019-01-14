@@ -229,12 +229,12 @@ cModel.prototype.update = function()
     var timeSec = timeMSec / 1000.0;
     var t = timeSec * 2 * Math.PI;
 
+    // Remove random motion
+    // if (this.mainMotionManager.isFinished())
+    // {
 
-    if (this.mainMotionManager.isFinished())
-    {
-
-        this.startRandomMotion(cDefine.MOTION_GROUP_IDLE, cDefine.PRIORITY_IDLE);
-    }
+    //     this.startRandomMotion(cDefine.MOTION_GROUP_IDLE, cDefine.PRIORITY_IDLE);
+    // }
 
     //-----------------------------------------------------------------
 

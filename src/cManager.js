@@ -98,6 +98,44 @@ cManager.prototype.tapEvent = function (x, y) {
   return true;
 };
 
+cManager.prototype.setExpression = function (name)
+{
+  for (var i = 0; i < this.models.length; i++) {
+    this.models[i].setExpression(name);
+  }
+}
+
+cManager.prototype.getExpressions = function (name)
+{
+
+  var exps = [];
+
+  for (var i = 0; i < this.models.length; i++) {
+    exps.push(this.models[i].expressions);
+  }
+
+  return exps;
+}
+
+cManager.prototype.startMotion = function (group, no)
+{
+  for (var i = 0; i < this.models.length; i++) {
+    this.models[i].startMotion(group, no, cDefine.PRIORITY_NORMAL);
+  }
+}
+
+cManager.prototype.getMotions = function (name)
+{
+
+  var mots = [];
+
+  for (var i = 0; i < this.models.length; i++) {
+    mots.push(this.models[i].motions);
+  }
+
+  return mots;
+}
+
 export{
   cManager,
 }

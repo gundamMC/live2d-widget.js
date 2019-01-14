@@ -67,6 +67,22 @@ class L2Dwidget{
     });
   }
 
+  setExpression(name){
+    coreApp.setExpression(name);
+  }
+
+  getExpressions(){
+    return coreApp.getExpressions();
+  }
+
+  startMotion(group, no){
+    coreApp.startMotion(group, no);
+  }
+
+  getMotions(name){
+    return coreApp.getMotions(name);
+  }
+
 
 /**
  * Capture current frame to png file {@link captureFrame}
